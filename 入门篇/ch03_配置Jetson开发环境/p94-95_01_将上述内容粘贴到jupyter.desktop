@@ -1,0 +1,9 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第3章 配置Jetson开发环境 · 印刷第94-95页 (PDF第104页, PDF第105页)
+# 上下文: 件，可参考如下命令。 ／ 为了能让Jupyter 服务在每次登录系统后都能直接访问，可以构建一个自启动桌面文
+
+# 构建自启动桌面文件
+touch ~/.config/autostart/jupyter.desktop
+[Desktop Entry]
+ Type=Application
+ Name=Jupyter Lab
+ Exec=/bin/sh -c "jupyter lab --ip=0.0.0.0 --no-browser"

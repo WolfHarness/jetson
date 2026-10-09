@@ -1,0 +1,15 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第3章 配置Jetson开发环境 · 印刷第109页 (PDF第119页)
+# 上下文: 以使用“ros2”命令。 ／ 这一部分完成ROS 环境的最终配置与初始化，并激活ROS 环境，以便在Docker 中可
+
+# 初始化 rosdep，用于管理 ROS 环境的依赖
+RUN rosdep init
+RUN rosdep update
+
+# 将 ROS 环境变量添加到 bashrc，以便自动激活 ROS 环境
+RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
+
+# 设置 DISPLAY 环境变量，以便 GUI 应用程序可以显示
+ENV DISPLAY=:0
+
+# 容器启动时执行的命令
+CMD ["bash"]

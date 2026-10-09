@@ -1,0 +1,5 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第5章 Jetson-Inference项目 · 印刷第165页 (PDF第175页)
+# 上下文: 如果收到了如下提示，请注意是否使用了正确的Python 模块。 ／ 令行的标准包。
+
+warning:  importing jetson.utils is deprecated.  please'import jetson_utils'instead.
+warning:  importing jetson.inference is deprecated.  please'import jetson_inference'instead.

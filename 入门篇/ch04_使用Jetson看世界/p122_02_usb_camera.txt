@@ -1,0 +1,4 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第4章 使用Jetson看世界 · 印刷第122页 (PDF第132页)
+# 上下文: 考构建自己的实现。 ／ 可以在“ usb_camera.py”中查看这个函数，以此作为参
+
+# usb_camera.py 使用GStreamer命令调用USB摄像头

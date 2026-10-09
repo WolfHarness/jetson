@@ -1,0 +1,4 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第2章 配置Jetson系统环境 · 印刷第042页 (PDF第52页)
+# 上下文: 可以对图2-34 所示的Sensors 中的参数进行定制化配置，以下配置项命令供参考。 ／ 图2-34 Indicator Sysmonitor 配置页用户定制
+
+cpu: {cpu} {cputemp} | mem: {mem} | net: {net} | swap: {swap}

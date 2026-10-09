@@ -1,0 +1,4 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第3章 配置Jetson开发环境 · 印刷第088页 (PDF第98页)
+# 上下文: 在具体编译时，可能会遇到CMake 版本过低而导致无法编译的问题，具体如下。
+
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required): CMake 3.18 or higher is required. You are running version 3.16.3

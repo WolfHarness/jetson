@@ -1,0 +1,10 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第2章 配置Jetson系统环境 · 印刷第059页 (PDF第69页)
+# 上下文: 需要将以下内容写入/usr/share/glib-2.0/schemas/org.gnome.Vino.gschema.xml 文件中。 ／ （4）配置VNC 
+
+<key name='enabled' type='b'>
+<summary>Enable remote access to the desktop</summary>
+<description>
+    If true, allows remote access to the desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC viewer.
+</description>
+<default>false</default>
+</key>

@@ -1,0 +1,41 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第3章 配置Jetson开发环境 · 印刷第108-109页 (PDF第118页, PDF第119页)
+# 上下文: foxy/Installation.html。 ／ 在这个部分完成Foxy 安装的全部过程，相关命令参考ROS 官网https://docs.ros.org/e
+
+# 安装 ROS Foxy 所需的语言环境设置
+RUN apt update && apt install -y locales
+RUN locale-gen en_US en_US.UTF-8
+RUN update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+RUN export LANG=en_US.UTF-8
+
+# 安装软件属性通用包，添加 universe 仓库以扩展可用软件包
+RUN apt install software-properties-common -y
+RUN add-apt-repository universe
+
+# 添加 ROS 官方 GPG 密钥
+RUN apt update && apt install curl -y
+RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
+
+# 添加 ROS 软件源
+RUN echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu  $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | tee /etc/apt/sources.list.d/ros2.list > /dev/null
+
+# 升级所有包并清理无用的依赖
+RUN apt upgrade -y && apt autoremove -y
+
+# 安装 ROS Foxy 桌面版和其他一些 ROS 工具和库
+RUN apt-get update && apt-get install -y \
+    ros-foxy-desktop \
+    ros-foxy-rqt* \
+    ros-foxy-cv-bridge \
+    ros-foxy-v4l2-camera \
+    ros-foxy-usb-cam \
+    ros-foxy-image-transport \
+    ros-foxy-image-publisher \
+    libgflags-dev \
+    nlohmann-json3-dev \
+    libgoogle-glog-dev \
+    python3-argcomplete \
+    python3-colcon-common-extensions \
+    python3-rosdep \
+    python3-rosinstall-generator \
+    python3-vcstool \
+    --no-install-recommends && rm -rf /var/lib/apt/lists/*

@@ -1,0 +1,12 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第4章 使用Jetson看世界 · 印刷第140页 (PDF第150页)
+# 上下文: 高。这是正常现象，因为模型的参数在初始时是随机的，需要通过训练逐步调整。 ／ 查看日志可知损失（loss）最初比较大，这表明模型在初始阶段尚未充分学习，损失较
+
+[Epoch 1, Mini-batch 100] loss: 1.876
+[Epoch 1, Mini-batch 200] loss: 0.605
+[Epoch 1, Mini-batch 300] loss: 0.465
+[Epoch 1, Mini-batch 400] loss: 0.381
+…
+[Epoch 10, Mini-batch 600] loss: 0.041
+[Epoch 10, Mini-batch 700] loss: 0.037
+[Epoch 10, Mini-batch 800] loss: 0.042
+[Epoch 10, Mini-batch 900] loss: 0.047

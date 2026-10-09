@@ -1,0 +1,24 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第3章 配置Jetson开发环境 · 印刷第107-108页 (PDF第117页, PDF第118页)
+# 上下文: 的软件，读者可根据自身需要进行调整。 ／ 这个过程主要限定了基础镜像来源，禁用了系统交互界面，并预先安装了镜像中用到
+
+# 使用 NVIDIA L4T Base镜像作为构建的基础
+FROM nvcr.io/nvidia/l4t-base:35.3.1
+
+# 设置环境变量以禁用交互式界面，加快安装过程
+ENV DEBIAN_FRONTEND=noninteractive
+
+# 更新包列表并安装一些必要的软件包，包括 Python 3、编译工具、多媒体工具等
+RUN apt update && apt install -y \
+    python3 \
+    python3-pip \
+    gcc-aarch64-linux-gnu \
+    v4l-utils \
+    net-tools \
+    vim \
+    ssh \
+    curl \
+    git \
+    freeglut3 \
+    freeglut3-dev \
+    libsfml-dev \
+    --no-install-recommends && rm -rf /var/lib/apt/lists/*

@@ -1,0 +1,13 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第4章 使用Jetson看世界 · 印刷第148页 (PDF第158页)
+# 上下文: 距的指标。损失值越低，说明模型的预测结果越接近实际标签。 ／ 上述代码中，我们需要关注的是损失值（Loss），它是衡量模型预测与实际标签之间差
+
+Epoch 1/10, Loss: 0.0785
+Epoch 2/10, Loss: 0.0329
+Epoch 3/10, Loss: 0.0166
+Epoch 4/10, Loss: 0.0120
+Epoch 5/10, Loss: 0.0086
+Epoch 6/10, Loss: 0.0045
+Epoch 7/10, Loss: 0.0047
+Epoch 8/10, Loss: 0.0037
+Epoch 9/10, Loss: 0.0033
+Epoch 10/10, Loss: 0.0020

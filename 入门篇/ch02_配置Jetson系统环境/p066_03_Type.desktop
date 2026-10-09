@@ -1,0 +1,8 @@
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第2章 配置Jetson系统环境 · 印刷第066页 (PDF第76页)
+# 上下文: 接着，创建一个自启动文件，屏幕尺寸配置为“1024×600”，内容如下。 ／ 为了使系统每次都能保持同样的屏幕尺寸，可以进行如下操作。
+
+[Desktop Entry]
+Type=Application
+Name=Screen Init
+Exec=xrandr --fb 1024x600
+X-GNOME-Autostart-enabled=true
