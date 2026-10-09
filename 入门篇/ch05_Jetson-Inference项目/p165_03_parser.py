@@ -3,8 +3,6 @@
 
     # 解析命令行参数
     parser = argparse.ArgumentParser()
-    parser.add_argument("filename", type=str, help="filename of the image to
-process")
-    parser.add_argument("--network", type=str, default="googlenet", help="model
-to use, can be: googlenet, resnet-18, ect.")
+    parser.add_argument("filename", type=str, help="filename of the image to process")
+    parser.add_argument("--network", type=str, default="googlenet", help="model to use, can be: googlenet, resnet-18, ect.")
     args = parser.parse_args()

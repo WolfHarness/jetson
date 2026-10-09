@@ -1,6 +1,6 @@
 # 《NVIDIA Jetson AI硬件开发实战：入门篇》代码提取索引
 
-共 251 个代码块。文件名格式: `p页码_序号_标识.扩展名`。
+共 248 个代码块。文件名格式: `p页码_序号_标识.扩展名`。
 
 ## ch02_配置Jetson系统环境
 
@@ -70,16 +70,16 @@
 | `p078_01_source.sh` | 078 | Shell |  |
 | `p078_02_echo.sh` | 078 | Shell | 可以通过如下命令查看当前OpenCV C++ 版本。 ／ 要遗漏。 |
 | `p078_03_opencv_version.sh` | 078 | Shell | 下命令。 ／ 如果需要查看OpenCV 当前版本的详细信息，如Python 版本安装路径等，可以执行如 |
-| `p078_04_python3.py` | 078 | Python | 或者使用Python 程序查看OpenCV 编译详情。 ／ 下命令。 |
+| `p078_04_python3.sh` | 078 | Shell | 或者使用Python 程序查看OpenCV 编译详情。 ／ 下命令。 |
 | `p079_01_mkdir.sh` | 079 | Shell | METADATA 元数据信息文件。 ／ 读者可以参考如下代码构建OpenCV-Python METADATA 和OpenCV-Contrib-Python。 |
 | `p080_01_opencv_cuda_check.cpp` | 080 | C++ | 加速是否可用，具体内容如下。 ／ 构建一个名为“ opencv_cuda_check.cpp”的C++ 文件，用于检测OpenCV 使用GPU |
 | `p080_02_g.sh` | 080 | Shell | 细信息，验证OpenCV 可以使用GPU 加速。 ／ 然后，编译并执行测试操作，可参考以下命令对上述代码进行编译，获得GPU 设备详 |
 | `p081_01_opencv_cuda_check.sh` | 081 | Shell | 通过下面的命令运行编译后的执行文件（opencv_cuda_check）。 |
-| `p082_01_python3.py` | 082 | Python | 下面验证 OpenCV Python 版本是否支持GPU 加速，参考如下命令进行简要测试。 ／ （2）OpenCV Python 版本测试 |
+| `p082_01_python3.sh` | 082 | Shell | 下面验证 OpenCV Python 版本是否支持GPU 加速，参考如下命令进行简要测试。 ／ （2）OpenCV Python 版本测试 |
 | `p082_02_import.py` | 082 | Python | 可以通过如下代码来查看GPU 设备详情： ／ 图3-8OpenCV 开启GPU 加速（Python 版本测试） |
 | `p083_01_apt_install.sh` | 083 | Shell | 在安装TensorFlow 前对现有Python 环境依赖包版本做如下处理。 ／ 1. 安装TensorFlow |
 | `p084_01_cd.sh` | 084 | Shell | 完成h5py 编译后，TensorFlow 安装就没有任何悬念了，参考以下命令执行安装即可。 |
-| `p084_02_python3.py` | 084 | Python | 通过执行以下代码来测试GPU 是否可用。 ／ 2. 测试TensorFlow |
+| `p084_02_python3.sh` | 084 | Shell | 通过执行以下代码来测试GPU 是否可用。 ／ 2. 测试TensorFlow |
 | `p84-85_01_import.py` | 84-85 | Python | 自动识别GPU 并使用GPU 运算。 ／ 会尽可能智能地在可用的CPU 和GPU 之间分配操作。可以通过如下代码测试其是否能够 |
 | `p086_01_apt_install.sh` | 086 | Shell | 安装PyTorch 可参考如下命令。 ／ （1）安装PyTorch |
 | `p087_01_apt_install.sh` | 087 | Shell | 安装TorchVision 时注意与PyTorch 版本匹配，可参考如下命令完成手动编译安装。 ／ 图3-12TorchVision 包引用警告 |
@@ -89,7 +89,7 @@
 | `p088_03_wget_https.sh` | 088 | Shell | 这种情况，可以使用如下命令升级CMake 版本。 ／ 在具体编译时，可能会遇到CMake 版本过低而导致无法编译的问题，具体如下。 |
 | `p088_04_cmake.sh` | 088 | Shell | 接着，验证CMake 版本。 ／ 这种情况，可以使用如下命令升级CMake 版本。 |
 | `p88-89_01_git_clone.sh` | 88-89 | Shell | 编译。 ／ 如果版本符合编译环境要求，可以参考TorchVision 的编译过程来完成TorchAudio 的 |
-| `p089_01_python3.py` | 089 | Python | 执行以下代码测试PyTorch 是否支持GPU 加速。 ／ 2. 测试PyTorch |
+| `p089_01_python3.sh` | 089 | Shell | 执行以下代码测试PyTorch 是否支持GPU 加速。 ／ 2. 测试PyTorch |
 | `p089_02_import.py` | 089 | Python | 下面测试PyTorch，使其在GPU 上完成操作，可参考如下代码。 ／ 图3-13PyTorch 验证GPU 加速是否可用 |
 | `p092_01_前需要先安装Node.sh` | 092 | Shell | JupyterLab 前需要先安装Node.js 和NPM。 ／ Package Manager, Node 包管理器）是Node.js 生态系统中不可或缺的一 |
 | `p092_02_前需要先安装Node.sh` | 092 | Shell | Jupyter 需要通过pip 方式安装，可以参考如下代码完成主程序安装。 ／ JupyterLab 前需要先安装Node.js 和NPM。 |
@@ -157,7 +157,7 @@
 | `p140_01.txt` | 140 | 终端输出 | 高。这是正常现象，因为模型的参数在初始时是随机的，需要通过训练逐步调整。 ／ 查看日志可知损失（loss）最初比较大，这表明模型在初始阶段尚未充分学习，损失较 |
 | `p140_02_torchsave.py` | 140 | Python | 将模型保存下来以便后续使用，可参考如下代码。 ／ 8. 保存模型 |
 | `p140-141_01_model_weights_path.py` | 140-141 | Python | 经过上述过程，我们已经获得了模型，下面进行评估。 ／ 9. 评估模型 |
-| `p141_01_Accuracy_of.sh` | 141 | Shell | 上述代码执行结果如下： |
+| `p141_01_Accuracy_of.txt` | 141 | 文本 | 上述代码执行结果如下： |
 | `p141_02_classification_rep.py` | 141 | Python | 执行以下代码，评估模型性能。 ／ 说明模型在测试集上表现非常好，具有较强的分类能力。 |
 | `p141-142_01_precision_recall.txt` | 141-142 | 终端输出 | 较为成功，模型泛化能力较好。 ／ 能力。模型在不同类别上的表现相对均衡，没有明显地过度偏向某个类别，说明训练过程 |
 | `p142-143_01_def_imshow.py` | 142-143 | Python | 像直接展示出来。 ／ 为了更直观地对比正误图像分类结果，可以使用如下方法将正确分类和错误分类的图 |
@@ -169,7 +169,7 @@
 | `p148_01_Epoch_10.txt` | 148 | 终端输出 | 距的指标。损失值越低，说明模型的预测结果越接近实际标签。 ／ 上述代码中，我们需要关注的是损失值（Loss），它是衡量模型预测与实际标签之间差 |
 | `p148_02_model_path.py` | 148 | Python | 可将该模型保存下来，以便后续使用。 ／ 上述代码执行结果损失值降到了0.0020，说明模型在训练数据上的表现已经非常出色。 |
 | `p148-149_01_model_path.py` | 148-149 | Python | 加载刚才保存好的模型，开启评估模式。 ／ 5. 评估模型 |
-| `p149_01_Validation_Accuracy.sh` | 149 | Shell | 上述代码模型准确率输出结果如下： |
+| `p149_01_Validation_Accuracy.txt` | 149 | 文本 | 上述代码模型准确率输出结果如下： |
 | `p149-150_01_import.py` | 149-150 | Python | 先来构建用于展示图片的函数，对图片进行裁剪。 ／ 最后，来对结果进行一个抽样，验证模型训练效果。 |
 | `p150_01_def_group_predictions.py` | 150 | Python | 下面根据预测结果和实际情况对图片进行分组处理。 |
 | `p151_01_def_plot_prediction_collection.py` | 151 | Python | 最后，构建一个函数用于图片展示。 |
@@ -188,7 +188,7 @@
 | `p157_02_make.sh` | 157 | Shell | 步骤３编译安装。现在可以执行编译操作，完成安装任务了。 ／ 在这个环节中，可以直接选择“Skip”跳过安装，之后执行以下命令重新选择。 |
 | `p157_03_cd_tools.sh` | 157 | Shell | 载好。执行以下命令，完成模型下载。 ／ 步骤4下载模型。为了节约后续的准备时间，现在可以把后续任务用到的模型提前下 |
 | `p158_01_run.sh` | 158 | Shell | 由于运行容器需要各种挂载和设备，建议使用脚本“docker/run.sh”来运行容器。 |
-| `p160_01_COMMAND_input_URI.sh` | 160 | Shell | Jetson-Inference 提供的命令行操作参数格式比较统一，如下所示。 ／ 试模型的推理功能，确保模型正确运行。 |
+| `p160_01_COMMAND_input_URI.txt` | 160 | 文本 | Jetson-Inference 提供的命令行操作参数格式比较统一，如下所示。 ／ 试模型的推理功能，确保模型正确运行。 |
 | `p161_01_cd_jetson-inference.sh` | 161 | Shell | 在正式使用Jetson-Inference 前，可以使用工具检查摄像头。 ／ 建一个 OpenGL 显示窗口，除非指定了 --headless 参数。 |
 | `p161_02_cd_jetson-inference.sh` | 161 | Shell | 也可以将摄像头获得的视频数据进行存储。 ／ 这时，Jetson-Inference 会调起对应的摄像头，并在显示器上输出画面。 |
 | `p163_01_cd_bin.sh` | 163 | Shell | 可以使用如下命令调用摄像头进行图像分类，并将结果输出到显示器上。 ／  --topK：可选，用于显示分类预测的前 K 个结果（默认为1 个）。 |
@@ -200,7 +200,7 @@
 | `p165_05_class_idx.py` | 165 | Python | 行分类，并将结果输出。 ／ 也可以在执行命令时，根据表5-4 所示使用其他预训练网络模型。接下来，对图像进 |
 | `p166_01_chmod.sh` | 166 | Shell | 现在，为上述Python 文件添加执行权限。 |
 | `p166_02_my-recognition1py_dog_2jpg.sh` | 166 | Shell | 执行以下命令，使用Jetson-Inference 自带的图片库进行图像分类推理。 ／ 现在，为上述Python 文件添加执行权限。 |
-| `p166_03_image_is.sh` | 166 | Shell | 一辙。 ／ 的置信度为 99.80%，表示模型对这个分类结果非常确定，这和我们肉眼判断的结果如出 |
+| `p166_03_image_is.txt` | 166 | 终端输出 | 一辙。 ／ 的置信度为 99.80%，表示模型对这个分类结果非常确定，这和我们肉眼判断的结果如出 |
 | `p169_01_cd_bin.sh` | 169 | Shell | 使用以下命令调用Jetson-Inference 做目标检测推理。 ／ 示例1物体识别 |
 | `p170_01_cd_bin.sh` | 170 | Shell | Jetson-Inference 自带的图片库进行人脸检测，并将结果标记在图片上。 ／ 我们先来使用专门进行人脸识别任务的模型—TAO FaceDetect。执 |
 | `p170_02_cd_bin.sh` | 170 | Shell | PeopleNet 对比测试，参考以下命令更换网络模型。 ／ 这显然不符合我们的预期，TAO FaceDetect 模型对于侧脸识别不尽如人意，改用TAO |
@@ -262,20 +262,17 @@
 
 | 文件 | 页码 | 类型 | 书中上下文 |
 |---|---|---|---|
-| `p227-228_01_import.py` | 227-228 | Python | 封装与扩展。 ／ 在代码实现层面，我们来构建一个L298N 电机控制器MotorController，便于后续功能 |
-| `p229_01_except_Exception.py` | 229 | Python |  |
-| `p229_02_def__override_pwm_destructor.py` | 229 | Python | 为。 ／ GPIO 清理流程冲突（导致“坏文件描述符”错误），因此通过覆写析构函数禁用这一自动行 |
-| `p229_03_def_set_motor_direction.py` | 229 | Python | 高低位信号，控制电机转动方向。 ／ 这里构建电机转向控制实现方法set_motor_direction，通过控制L298N 的IN1 ～IN4 |
+| `p227-228-229_01_import.py` | 227-228-229 | Python | 封装与扩展。 ／ 在代码实现层面，我们来构建一个L298N 电机控制器MotorController，便于后续功能 |
+| `p229_01_def__override_pwm_destructor.py` | 229 | Python | 为。 ／ GPIO 清理流程冲突（导致“坏文件描述符”错误），因此通过覆写析构函数禁用这一自动行 |
+| `p229_02_def_set_motor_direction.py` | 229 | Python | 高低位信号，控制电机转动方向。 ／ 这里构建电机转向控制实现方法set_motor_direction，通过控制L298N 的IN1 ～IN4 |
 | `p229-230_01_def_set_motor_speed.py` | 229-230 | Python | 脚PWM 信号，控制电机转速。 ／ 这里构建电机转速控制实现方法set_motor_speed，通过控制L298N 的ENA、ENB 引 |
 | `p230-231_01_def_car_forward.py` | 230-231 | Python | 停止等。 ／ 有了前面的基本实现，就可以构建小车完整的运动控制：前进、后退、左转、右转、 |
 | `p231-232_01_def_cleanup.py` | 231-232 | Python | 最后，释放GPIO 资源。 |
 | `p232_01_if___name.py` | 232 | Python | 可以参考如下程序，使用Jetson 驱动L298N 两路电机控制。 |
 | `p233_01_import.py` | 233 | Python | 位置偏差。 ／ 识别指定类别的目标并计算其与屏幕中心的 |
 | `p233-234_01_class_ObjectDetector.py` | 233-234 | Python | 图8-6Jetson-Inference 目标检测 ／ 位置偏差。 |
-| `p234-235_01_def_process_frame.py` | 234-235 | Python | 添加各种可视化元素并显示图像。 ／ 与屏幕中心的偏移量，将图像转换为 OpenCV 兼容的格式并调整大小，最后调用绘图函数 |
-| `p236_01_if_img_cv.py` | 236 | Python |  |
-| `p236-237_01_def__draw_overlay.py` | 236-237 | Python | 比例适应显示窗口，保持良好的视觉效果。 ／ 键信息。这些视觉元素帮助用户直观了解检测情况，而_resize_image 方法则确保图像能按 |
-| `p238_01_resized_img.py` | 238 | Python |  |
+| `p234-235-236_01_def_process_frame.py` | 234-235-236 | Python | 添加各种可视化元素并显示图像。 ／ 与屏幕中心的偏移量，将图像转换为 OpenCV 兼容的格式并调整大小，最后调用绘图函数 |
+| `p236-237-238_01_def__draw_overlay.py` | 236-237-238 | Python | 比例适应显示窗口，保持良好的视觉效果。 ／ 键信息。这些视觉元素帮助用户直观了解检测情况，而_resize_image 方法则确保图像能按 |
 | `p238-239_01_def_start_detection.py` | 238-239 | Python | 性，又提供了灵活的操作接口，使得该类能够适应多种应用场景。 ／ 提供了单帧检测的功能，满足不同场景下的使用需求。整体设计既考虑了实时检测的连续 |
 | `p239_01_if___name.py` | 239 | Python | 最后，参考如下代码，启动目标检测器。 |
 | `p239-240_01_import.py` | 239-240 | Python | ObjectDetector（Jetson-Inference 目标检测）两个工具类，最终实现AI 视觉控制两轮机器人。 ／ 里构建核心控制类TargetTra |
@@ -285,11 +282,11 @@
 ## 类型统计
 
 - Shell: 147
-- Python: 88
-- 终端输出: 5
+- Python: 81
+- 终端输出: 6
+- 文本: 5
 - desktop: 3
 - Dockerfile: 3
-- 文本: 2
 - XML: 1
 - C++: 1
 - 配置: 1

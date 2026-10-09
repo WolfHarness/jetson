@@ -1,4 +1,4 @@
-# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第8章 综合案例使用Jetson开发AI视觉机器人 · 印刷第227-228页 (PDF第237页, PDF第238页)
+# 出处: 《NVIDIA Jetson AI硬件开发实战：入门篇》第8章 综合案例使用Jetson开发AI视觉机器人 · 印刷第227-228-229页 (PDF第237页, PDF第238页, PDF第239页)
 # 上下文: 封装与扩展。 ／ 在代码实现层面，我们来构建一个L298N 电机控制器MotorController，便于后续功能
 
 #!/usr/bin/env python
@@ -56,3 +56,7 @@ class MotorController:
 
             self.gpio_initialized = True
             print("初始化完成：GPIO和PWM就绪")
+        except Exception as e:
+            print(f"初始化失败：{str(e)}")
+            self.cleanup()
+            sys.exit(1)
